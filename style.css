@@ -1,0 +1,163 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+.ciano{
+    color: #01BA7D;
+}
+
+.navbar,
+.bg-nav,
+.social-link li{
+    background: #020E1D;
+}
+
+.navbar-brand,
+.navbar-brand:hover,
+#cabecalho .nav .nav-link,
+#Incluido .nav .nav-link,
+.container-about,
+.color-button-incluido,
+.div-Fale-conosco .btn,
+.social-link a{
+    color: #fff;
+}
+
+#cabecalho .nav .nav-link.active,
+.color-button-incluido.active,
+.div-Fale-conosco .btn,
+.social-link li:hover{
+    background: #EB700C;
+}
+
+.navbar-toggler,
+.color-button-incluido i{
+    background: #ffeae6;
+}
+
+.tamanho{
+    height: 585px;
+}
+
+.bg-black{
+    background: #000;
+}
+
+.container-about{
+    max-height: 100%;
+    background: #020E1D;
+}
+
+.color-p{
+    color: #868B92;
+}
+
+.botao-link,
+.color-button-incluido i,
+.color-destaque{
+    color: #EB700C;
+}
+
+.img-altura-topo {
+    height: 300px; 
+    width: 100%;
+    object-fit: cover;
+}
+
+.img-altura-inferior{
+    height: 250px; 
+    width: 100%;
+    object-fit: cover;
+}
+
+aside .nav-servicos .nav-link.active{
+    color: #01BA7D;
+}
+
+.nav-servicos .nav-link:hover,
+.nav-servicos .nav-link{
+    color: #000;
+}
+
+p .night{
+    font-size: 12px;
+    color: #868B92;
+    font-weight: normal;
+}
+
+.img-category div img{
+    height: 216px;
+    object-fit: cover;
+}
+
+.bg-nav .nav-link{
+    padding: 0;
+}
+
+.bg-inluido{
+    background-image: url('./img/incluso/bg-section/Bg.jpg');
+    max-height: 500px;
+    margin-bottom: 15%;
+    background-position: center bottom;
+}
+
+.img-incluido{
+    max-height: 270px;
+    object-fit: cover;
+}
+
+.spacing{
+    padding-top: 10%;
+}
+
+#Fale-conosco{
+    background-image: url('./img/Fale-conosco/swimming.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.div-Fale-conosco{
+    padding: 10% 5% 2% 5%;
+}
+
+.social-link li{
+    display: inline;
+    padding: 1% 1.2% 1% 1.2%;
+    border-radius: 50%;
+}
+
+
+footer{
+    background: #000;
+}
+
+@media (max-width: 767px) {
+    .carousel .carousel-item img{
+        height: 288px;
+    }
+
+    #Sobre .col-8{
+        display: none;
+    }
+    .remove{
+        display: none;
+    }
+
+    #Fale-conosco{
+        background: #020E1D;
+        color: #fff;
+    }
+
+    .bg-white{
+        background-color: #020E1D !important;
+    }
+
+    .rounded-circle {
+        border-radius: 0 !important;
+    }
+}
+
+
+
+

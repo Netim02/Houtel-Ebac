@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pousada - EBAC</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-md sticky-top p-3" id="cabecalho">
+        <div class="container">
+            <h1 class="navbar-brand m-0 fw-bold">Houtel <span class="ciano">EBAC</span></h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-navegacao">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-navegacao">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#Sobre">
+                            <i class="bi bi-info-circle-fill me-1"></i> Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#Servicos">
+                            <i class="bi bi-bell-fill me-1"></i> Serviços
+                            </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#Incluido">
+                            <i class="bi bi-check-circle-fill me-1"></i> Incluído
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#Fale-conosco">
+                            <i class="bi bi-phone-vibrate-fill me-1"></i> Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho" data-bs-smooth-scroll="true" data-bs-root-margin="-150px">
+        <section id="Sobre" class="bg-black pb-5">
+            <div id="carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active"></button>   
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carousel" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="d-block w-100 tamanho" src="./img/carousel/piscina.jpg" alt="Primeiro Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 tamanho" src="./img/carousel/quarto.jpg" alt="Segundo Slide">
+                    </div>
+                    <div class="carousel-item">
+                        <img class="d-block w-100 tamanho" src="./img/carousel/recepção.jpg" alt="Terceiro Slide">
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" data-bs-target="#carousel" type="button" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" data-bs-target="#carousel" type="button" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </a>
+            <div class="container mt-5">
+                <div class="row">
+                    <div class="col-12 col-md-4 container-about pe-0 ps-0 pb-3">
+                        <img class="img-fluid d-block w-100" src="./img/about/lampshade.jpg" alt="Imagem ilustrativa">
+                        <div class="container me-2 ms-2">
+                            <h2 class="mt-4 mb-4 ">About Us</h2>
+                            <p class="mb-4 color-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit reiciendis odio dolores vitae odit provident sed itaque quae, molestias exercitationem voluptatibus, laborum adipisci vel veritatis iste ut ipsam commodi eum?</p>
+                            <a class="botao-link fs-4 text-decoration-none" href="#">learn More <i class="bi bi-arrow-right-circle ps-3 fs-2"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div class="row">
+                            <!-- Imagem única no topo -->
+                            <div class="col-12 ">
+                                <img src="./img/about/corridor.jpg" class="img-fluid img-altura-topo" alt="Imagem Topo">
+                            </div>
+                        </div>
+                        <div class="row mt-3">
+                            <!-- Duas imagens na parte inferior -->
+                            <div class="col-7">
+                                <img src="./img/about/headboard lampshade.jpg" class="img-fluid img-altura-inferior" alt="Imagem Inferior Esquerda">
+                            </div>
+                            <div class="col-5">
+                                <img src="./img/about/hotel hall corridor.jpg" class="img-fluid img-altura-inferior" alt="Imagem Inferior Direita">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Servicos" class="pb-5 pt-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center fw-bold">Popular By Category</h2>
+                </div>
+                <div class="row pt-3">
+                    <aside class="col-md-1 pe-3">
+                        <nav class="nav nav-underline flex-column nav-servicos">
+                            <button data-bs-toggle="tab" data-bs-target="#Hotel" type="button" class=" fw-bold nav-link active">Hotel</button>
+                            <button data-bs-toggle="tab" data-bs-target="#Motel" type="button" class=" fw-bold nav-link">Motel</button>
+                            <button data-bs-toggle="tab" data-bs-target="#Apartment" type="button" class=" fw-bold nav-link">Apartment</button>
+                            <button data-bs-toggle="tab" data-bs-target="#Camping" type="button" class=" fw-bold nav-link">Camping</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-11">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="Hotel">
+                                <div class="row img-category">
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="./img/category/Hotel/quarto 1.jpg" alt="#">
+                                        <h2 class="fw-bold fs-5 pt-1 pb-1">lorem ipsum</h2>
+                                        <p class="botao-link fw-bold">$59<span class="fs-7 night">/Night</span></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="./img/category/Hotel/quarto 2.jpg" alt="#">
+                                        <h2 class="fw-bold fs-5 pt-1 pb-1">lorem ipsum</h2>
+                                        <p class="botao-link fw-bold">$59<span class="fs-7 night">/Night</span></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="./img/category/Hotel/quarto 3.jpg" alt="#">
+                                        <h2 class="fw-bold fs-5 pt-1 pb-1">lorem ipsum</h2>
+                                        <p class="botao-link fw-bold">$59<span class="night">/Night</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Motel">
+                                <div class="row img-category">
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="./img/category/Motel/quarto 1.jpg" alt="#">
+                                        <h2 class="fw-bold fs-5 pt-1 pb-1">lorem ipsum</h2>
+                                        <p class="botao-link fw-bold">$59<span class="fs-7 night">/Night</span></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="./img/category/Motel/hidro.webp" alt="#">
+                                        <h2 class="fw-bold fs-5 pt-1 pb-1">lorem ipsum</h2>
+                                        <p class="botao-link fw-bold">$59<span class="fs-7 night">/Night</span></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="./img/category/Motel/quarto 2.webp" alt="#">
+                                        <h2 class="fw-bold fs-5 pt-1 pb-1">lorem ipsum</h2>
+                                        <p class="botao-link fw-bold">$59<span class="night">/Night</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Apartment">
+                                <div class="row img-category">
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="./img/category/apartment/room 1.jpg" alt="#">
+                                        <h2 class="fw-bold fs-5 pt-1 pb-1">lorem ipsum</h2>
+                                        <p class="botao-link fw-bold">$59<span class="fs-7 night">/Night</span></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="./img/category/apartment/room 2..jpg" alt="#">
+                                        <h2 class="fw-bold fs-5 pt-1 pb-1">lorem ipsum</h2>
+                                        <p class="botao-link fw-bold">$59<span class="fs-7 night">/Night</span></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="./img/category/apartment/room 3.jpg" alt="#">
+                                        <h2 class="fw-bold fs-5 pt-1 pb-1">lorem ipsum</h2>
+                                        <p class="botao-link fw-bold">$59<span class="night">/Night</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane" id="Camping">
+                                <div class="row img-category">
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="./img/category/camping/camping 1.avif" alt="#">
+                                        <h2 class="fw-bold fs-5 pt-1 pb-1">lorem ipsum</h2>
+                                        <p class="botao-link fw-bold">$59<span class="fs-7 night">/Night</span></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="./img/category/camping/camping 2.webp" alt="#">
+                                        <h2 class="fw-bold fs-5 pt-1 pb-1">lorem ipsum</h2>
+                                        <p class="botao-link fw-bold">$59<span class="fs-7 night">/Night</span></p>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img class="d-block w-100" src="./img/category/camping/camping 3.jpg" alt="#">
+                                        <h2 class="fw-bold fs-5 pt-1 pb-1">lorem ipsum</h2>
+                                        <p class="botao-link fw-bold">$59<span class="night">/Night</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="Incluido" class="remove">
+            <div class="bg-image bg-cover bg-inluido pt-5 pb-5 w-100">
+                <div class="container text-center">
+                    <div class="row m-0 spacing">
+                        <nav class="nav navbar-expand-md p-0 bg-nav">
+                            <button data-bs-toggle="tab" data-bs-target="#Restaurant" class="w-100 pb-3 border-end border-dark nav-link color-button-incluido active">
+                                <i class="w-25 m-auto fs-4 border rounded-5 rounded-top-0 d-block bi-layout-text-sidebar-reverse"></i>
+                                <span class="d-block pt-5">Restaurant</span>
+                            </button>
+                            <button data-bs-toggle="tab" data-bs-target="#Wifi" class="w-100 pb-3 border-end border-dark nav-link color-button-incluido">
+                                <i class="w-25 m-auto fs-4 border rounded-5 rounded-top-0 d-block bi bi-wifi"></i>
+                                <span class="d-block pt-5">Wifi</span>
+                            </button>
+                            <button data-bs-toggle="tab" data-bs-target="#Gym" class="w-100 pb-3 border-end border-dark nav-link color-button-incluido">
+                                <i class="w-25 m-auto fs-4 border rounded-5 rounded-top-0 d-block bi bi-heart-pulse-fill"></i>
+                                <span class="d-block pt-5">Gym</span>
+                            </button>
+                            <button data-bs-toggle="tab" data-bs-target="#Pool" class="w-100 pb-3 border-end border-dark nav-link color-button-incluido">
+                                <i class="w-25 m-auto fs-4 border rounded-5 rounded-top-0 d-block bi bi-water"></i>
+                                <span class="d-block pt-5">Swinmming Pool</span>
+                            </button>
+                            <button data-bs-toggle="tab" data-bs-target="#Segurity" class="w-100 pb-3 border-dark nav-link color-button-incluido">
+                                <i class="w-25 m-auto fs-4 border rounded-5 rounded-top-0 d-block bi bi-shield-fill-plus"></i>
+                                <span class="d-block pt-5">24 Hour's Segurity</span>
+                            </button>
+                        </nav>
+                        <div class="container bg-white ps-4 pt-4 pb-4">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="Restaurant">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="d-block w-100 img-incluido" src="./img/incluso/sections/restaurant.jpg" alt="#">
+                                        </div>
+                                        <div class="col-md-8 text-start ps-4 ">
+                                            <h2 class="fw-bold">Restaurant</h2>
+                                            <p class="color-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatibus dolor non? Nobis expedita reiciendis voluptas recusandae alias! Voluptate autem quas mollitia facere eum earum quisquam nemo ad illum deleniti! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia vero optio qui, voluptatibus dignissimos aperiam distinctio itaque cum voluptatum blanditiis ab odio amet id recusandae, ratione quisquam quo molestiae ut.</p>
+                                            <p class="color-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quia quae? Distinctio temporibus illo maiores fugit iste fuga doloribus, vel nostrum cupiditate asperiores cum commodi vero, sit voluptas ducimus esse.</p>
+                                            <p class="fs-5 color-destaque text-uppercase">Service Hours 19:00-22:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="Wifi">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="d-block w-100 img-incluido" src="./img/incluso/sections/wifi.jpg" alt="#">
+                                        </div>
+                                        <div class="col-md-8 text-start ps-4 ">
+                                            <h2 class="fw-bold">Wifi</h2>
+                                            <p class="color-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatibus dolor non? Nobis expedita reiciendis voluptas recusandae alias! Voluptate autem quas mollitia facere eum earum quisquam nemo ad illum deleniti! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia vero optio qui, voluptatibus dignissimos aperiam distinctio itaque cum voluptatum blanditiis ab odio amet id recusandae, ratione quisquam quo molestiae ut.</p>
+                                            <p class="color-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quia quae? Distinctio temporibus illo maiores fugit iste fuga doloribus, vel nostrum cupiditate asperiores cum commodi vero, sit voluptas ducimus esse.</p>
+                                            <p class="fs-5 color-destaque text-uppercase">Service Hours 24hrs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="Gym">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="d-block w-100 img-incluido" src="./img/incluso/sections/gym.jpg" alt="#">
+                                        </div>
+                                        <div class="col-md-8 text-start ps-4 ">
+                                            <h2 class="fw-bold">Gym</h2>
+                                            <p class="color-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatibus dolor non? Nobis expedita reiciendis voluptas recusandae alias! Voluptate autem quas mollitia facere eum earum quisquam nemo ad illum deleniti! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia vero optio qui, voluptatibus dignissimos aperiam distinctio itaque cum voluptatum blanditiis ab odio amet id recusandae, ratione quisquam quo molestiae ut.</p>
+                                            <p class="color-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quia quae? Distinctio temporibus illo maiores fugit iste fuga doloribus, vel nostrum cupiditate asperiores cum commodi vero, sit voluptas ducimus esse.</p>
+                                            <p class="fs-5 color-destaque text-uppercase">Service Hours 5:00-22:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="Pool">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="d-block w-100 img-incluido" src="./img/incluso/sections/pool.jpg" alt="#">
+                                        </div>
+                                        <div class="col-md-8 text-start ps-4 ">
+                                            <h2 class="fw-bold">Swinmming Pool</h2>
+                                            <p class="color-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatibus dolor non? Nobis expedita reiciendis voluptas recusandae alias! Voluptate autem quas mollitia facere eum earum quisquam nemo ad illum deleniti! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia vero optio qui, voluptatibus dignissimos aperiam distinctio itaque cum voluptatum blanditiis ab odio amet id recusandae, ratione quisquam quo molestiae ut.</p>
+                                            <p class="color-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quia quae? Distinctio temporibus illo maiores fugit iste fuga doloribus, vel nostrum cupiditate asperiores cum commodi vero, sit voluptas ducimus esse.</p>
+                                            <p class="fs-5 color-destaque text-uppercase">Service Hours 7:00-22:00 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="Segurity">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="d-block w-100 img-incluido" src="./img/incluso/sections/segurity.jpg" alt="#">
+                                        </div>
+                                        <div class="col-md-8 text-start ps-4 ">
+                                            <h2 class="fw-bold">Segurity</h2>
+                                            <p class="color-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatibus dolor non? Nobis expedita reiciendis voluptas recusandae alias! Voluptate autem quas mollitia facere eum earum quisquam nemo ad illum deleniti! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia vero optio qui, voluptatibus dignissimos aperiam distinctio itaque cum voluptatum blanditiis ab odio amet id recusandae, ratione quisquam quo molestiae ut.</p>
+                                            <p class="color-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, quia quae? Distinctio temporibus illo maiores fugit iste fuga doloribus, vel nostrum cupiditate asperiores cum commodi vero, sit voluptas ducimus esse.</p>
+                                            <p class="fs-5 color-destaque text-uppercase">Service Hours 24hrs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="Fale-conosco" class="bg-image h-100 w-100">
+            <div class="container pt-5">
+                <div class="row">
+                    <div class="col-md-6 remove"></div>
+                    <div class="col-md-6 bg-white rounded-circle rounded-bottom-0 div-Fale-conosco">
+                        <h2 class="text-center fw-bold pb-2">Fale Conosco</h2>
+                        <form>
+                            <label for="Name" class="form-label fw-bold">Name</label>
+                            <input type="text" id="Name" class="form-control  color-p" placeholder="Your Name" required>
+                        </form>
+                        <form>
+                            <label for="email" class="form-label fw-bold mt-3">Email</label>
+                            <input type="email" id="Email" class="form-control  color-p" placeholder="Your Email" required>
+                        </form>
+                        <form>
+                            <label for="Telefone" class="form-label fw-bold mt-3">Telephone</label>
+                            <input type="tel" id="Telefone" class="form-control  color-p" placeholder="Your phone/cell phone" required>
+                        </form>
+                        <form>
+                            <label for="Mensagem" class="form-label fw-bold mt-3">Your message</label>
+                            <textarea id="mensagem" class="form-control  color-p" placeholder="your message"></textarea> 
+                        </form>
+                        <button type="button" class="btn w-100 rounded-pill p-2 fw-bold fs-5 mt-3">Send</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="pt-5">
+            <div class="container text-center">
+                <div class="row">
+                    <ul class="social-link fs-4">
+                        <li><a href="#" target="_blank"><i class="bi bi-facebook"></i></a></li>
+                        <li><a href="https://wa.me/5534998980041?" target="_blank"><i class="bi bi-whatsapp"></i></a></li>
+                        <li><a href="https://www.instagram.com/netim_02/"><i class="bi bi-instagram"></i></a></li>
+                        <li><a href="https://www.linkedin.com/in/antônio-bernardes-engenheiro-front-end/"><i class="bi bi-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <p class="color-p">&copy;2024 Todos os direitos reservados</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>
